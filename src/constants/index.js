@@ -113,6 +113,11 @@ export const text = {
         button: "Submit",
       },
     },
+    Footer: [
+      {
+        text: "All Rights Reserved Marx",
+      },
+    ],
   },
   CZ: {
     Header: [
@@ -228,6 +233,11 @@ export const text = {
         button: "Odeslat",
       },
     },
+    Footer: [
+      {
+        text: "Všechna práva vyhrazena Marx",
+      },
+    ],
   },
 };
 

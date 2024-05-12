@@ -6,6 +6,7 @@ import Skills from "./Components/Skills";
 import School from "./Components/School";
 import MyHobbies from "./Components/MyHobbies";
 import ContactMe from "./Components/ContactMe";
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <School />
         <MyHobbies />
         <ContactMe />
+        <Footer />
       </div>
       <ButtonGradient />
     </LanguageProvider>
