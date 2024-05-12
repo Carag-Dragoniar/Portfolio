@@ -5,8 +5,6 @@ import { LanguageContext } from "../languageContext.jsx";
 import { useContext, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-import ReCAPTCHA from "react-google-recaptcha";
-
 import Phone from "../assets/phone.svg";
 import map from "../assets/map.svg";
 
@@ -18,9 +16,6 @@ const ContactMe = () => {
   const [message, setMessage] = useState("");
   const [phone, setPhone] = useState("");
   const [fake, setFake] = useState("");
-
-  const [recaptcha, setRecaptcha] = useState("");
-  const [isVerified, setIsVerified] = useState("");
 
   const form = text[language].ContactMe.form;
 
@@ -36,19 +31,10 @@ const ContactMe = () => {
     Phone: Phone,
   };
 
-  function onChange(value) {
-    setRecaptcha(value);
-    if (value) {
-      setIsVerified(true);
-    } else {
-      setIsVerified(false);
-    }
-  }
-
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    if (fake === "" && isVerified) {
+    if (fake === "") {
       emailjs
         .send("service_090909", "template_090909", templateParams, {
           publicKey: "dEdd7kcwI8O9RBiwm",
@@ -131,10 +117,6 @@ const ContactMe = () => {
               name="fake_field"
               value={fake}
               onChange={(e) => setFake(e.target.value)}
-            />
-            <ReCAPTCHA
-              sitekey="6Ldty9kpAAAAAOu39jusQuheDO_qf7ysyhMeNPNw"
-              onChange={onChange}
             />
             <button
               onClick={handleSubmit}
