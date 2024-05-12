@@ -100,11 +100,6 @@ export const text = {
           img: "Phone",
         },
         {
-          id: "1",
-          text: "honzamarx08@gmail.com",
-          img: "Email",
-        },
-        {
           id: "2",
           text: "Czech republic, Pilsen",
           img: "map",
@@ -211,11 +206,6 @@ export const text = {
           id: "0",
           text: "734 703 282",
           img: "Phone",
-        },
-        {
-          id: "1",
-          text: "honzamarx08@gmail.com",
-          img: "Email",
         },
         {
           id: "2",
