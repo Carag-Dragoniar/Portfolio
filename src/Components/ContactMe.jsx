@@ -55,21 +55,23 @@ const ContactMe = () => {
       <Heading>
         {text[language].Header.find((item) => item.id === "4").title}
       </Heading>
-      <div className="flex w-full">
-        <section className="flex flex-col justify-around w-[50%] border-r border-r-n-5/50 mt-5">
+      <div className="flex flex-col md:flex-row w-full">
+        <section className="flex flex-col justify-around w-full md:w-[50%] border-b md:border-b-0 md:border-r border-n-5/50 sm:pl-10 py-5 md:py-0 md:pl-0 md:mt-5">
           {text[language].ContactMe.info.map((item) => (
             <div key={item.id} className="flex items-center">
               <img
                 src={icons[item.img]}
                 alt={item.img}
                 width={86}
-                className="mr-5"
+                className="mr-5 hidden sm:block"
               />
-              <p className="h2 text-n-2">{item.text}</p>
+              <p className="h2 text-n-2 text-center w-full sm:w-auto sm:text-left">
+                {item.text}
+              </p>
             </div>
           ))}
         </section>
-        <section className="flex justify-center align-center w-[50%] h-full">
+        <section className="flex justify-center align-center w-full md:w-[50%] h-full">
           <form method="post" className="flex flex-col w-[90%] h-full">
             <input
               type="text"
@@ -114,7 +116,10 @@ const ContactMe = () => {
               value={fake}
               onChange={(e) => setFake(e.target.value)}
             />
-            <button onClick={handleSubmit} className="form w-[50%] self-center">
+            <button
+              onClick={handleSubmit}
+              className="form w-[80%] sm:w-[50%] self-center"
+            >
               Submit
             </button>
           </form>
