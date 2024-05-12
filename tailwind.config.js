@@ -6,6 +6,17 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      keyframes: {
+        fly: {
+          "0%": { transform: "translateX(-20vw) scaleX(1)" },
+          "49%": { transform: "translateX(100vw) scaleX(1)" },
+          "51%": { transform: "translateX(100vw) scaleX(-1)" },
+          "100%": { transform: "translateX(-20vw) scaleX(-1)" },
+        },
+      },
+      animation: {
+        fly: "fly 30s linear infinite ",
+      },
       colors: {
         n: {
           1: "#FFFFFF",
