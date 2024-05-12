@@ -7,7 +7,6 @@ import emailjs from "@emailjs/browser";
 
 import Phone from "../assets/phone.svg";
 import map from "../assets/map.svg";
-import Email from "../assets/email.svg";
 
 const ContactMe = () => {
   const { language } = useContext(LanguageContext);
@@ -26,7 +25,6 @@ const ContactMe = () => {
   };
 
   const icons = {
-    Email: Email,
     map: map,
     Phone: Phone,
   };
