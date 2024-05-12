@@ -48,7 +48,7 @@ const ContactMe = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    if (fake === "") {
+    if (fake === "" && isVerified) {
       emailjs
         .send("service_090909", "template_090909", templateParams, {
           publicKey: "dEdd7kcwI8O9RBiwm",
@@ -132,6 +132,10 @@ const ContactMe = () => {
               value={fake}
               onChange={(e) => setFake(e.target.value)}
             />
+            <ReCAPTCHA
+              sitekey="6Ldty9kpAAAAAOu39jusQuheDO_qf7ysyhMeNPNw"
+              onChange={onChange}
+            />
             <button
               onClick={handleSubmit}
               className="form w-[80%] sm:w-[50%] self-center"
@@ -141,10 +145,6 @@ const ContactMe = () => {
           </form>
         </section>
       </div>
-      <ReCAPTCHA
-        sitekey="6Ldty9kpAAAAAOu39jusQuheDO_qf7ysyhMeNPNw"
-        onChange={onChange}
-      />
     </Section>
   );
 };
