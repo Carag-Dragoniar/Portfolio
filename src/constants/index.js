@@ -105,6 +105,13 @@ export const text = {
           img: "map",
         },
       ],
+      form: {
+        name: "Name",
+        email: "Email",
+        message: "Your message",
+        phone: "Phone number",
+        button: "Submit",
+      },
     },
   },
   CZ: {
@@ -213,6 +220,13 @@ export const text = {
           img: "map",
         },
       ],
+      form: {
+        name: "Jméno",
+        email: "Email",
+        message: "Vaše zpráva",
+        phone: "Telefoní číslo",
+        button: "Odeslat",
+      },
     },
   },
 };

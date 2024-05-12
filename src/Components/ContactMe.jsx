@@ -17,6 +17,8 @@ const ContactMe = () => {
   const [phone, setPhone] = useState("");
   const [fake, setFake] = useState("");
 
+  const form = text[language].ContactMe.form;
+
   const templateParams = {
     name,
     email,
@@ -76,7 +78,7 @@ const ContactMe = () => {
             <input
               type="text"
               name="name"
-              placeholder="Name"
+              placeholder={form.name}
               value={name}
               onChange={(e) => setName(e.target.value)}
               className="form"
@@ -85,7 +87,7 @@ const ContactMe = () => {
             <input
               type="email"
               name="email"
-              placeholder="Email"
+              placeholder={form.email}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="form"
@@ -94,7 +96,7 @@ const ContactMe = () => {
             <input
               type="tel"
               name="tel"
-              placeholder="Number"
+              placeholder={form.phone}
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               className="form"
@@ -103,7 +105,7 @@ const ContactMe = () => {
             <textarea
               name="message"
               id="message"
-              placeholder="Your message"
+              placeholder={form.message}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               className="form"
@@ -120,7 +122,7 @@ const ContactMe = () => {
               onClick={handleSubmit}
               className="form w-[80%] sm:w-[50%] self-center"
             >
-              Submit
+              {form.button}
             </button>
           </form>
         </section>
