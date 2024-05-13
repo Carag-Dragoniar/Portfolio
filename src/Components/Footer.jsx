@@ -10,9 +10,9 @@ const Footer = () => {
 
   return (
     <footer className="w-full">
-      <img src={dragon} width={300} alt="" className="animate-fly" />
+      <img src={dragon} width={300} alt="" className="animate-fly2 sm:animate-fly" />
       <div className="w-full h-28 bg-n-5/30 border-t-4 border-n-5 flex items-center">
-        <p className="h2 w-full text-center">
+        <p className="body-2 w-full text-center">
           &copy;{year + " "}
           {text[language].Footer.text}
         </p>

@@ -111,6 +111,7 @@ export const text = {
         message: "Your message",
         phone: "Phone number",
         button: "Submit",
+        button2: "Submitted!",
       },
     },
     Footer: {
@@ -229,6 +230,7 @@ export const text = {
         message: "Vaše zpráva",
         phone: "Telefoní číslo",
         button: "Odeslat",
+        button2: "Odesláno!",
       },
     },
     Footer: {

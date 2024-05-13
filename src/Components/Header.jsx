@@ -74,7 +74,7 @@ const Header = () => {
         <div
           className={`absolute lg:top-[6.5rem] lg:h-[5rem] xl:h-[10rem] lg:w-[2rem] xl:w-[5rem] lg:right-1 2xl:right-[3rem] lg:shadow-2xlCustom ${
             openNavigation
-              ? "flex mx-auto top-[10rem] left-0 right-0 w-[8rem]"
+              ? "flex mx-auto top-[12vh] left-0 right-0 w-[8rem]"
               : "hidden"
           } lg:flex lg:flex-col items-center justify-around backdrop-blur-md bg-n-8/90 border border-[#38363c] rounded-xl`}
         >

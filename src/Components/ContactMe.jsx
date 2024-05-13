@@ -16,6 +16,7 @@ const ContactMe = () => {
   const [message, setMessage] = useState("");
   const [phone, setPhone] = useState("");
   const [fake, setFake] = useState("");
+  const [submitted, setSubmitted] = useState(false);
 
   const form = text[language].ContactMe.form;
 
@@ -47,6 +48,7 @@ const ContactMe = () => {
             console.log("FAILED...", error.text);
           }
         );
+      setSubmitted(true);
     } else {
       console.error("BOT!!!!");
     }
@@ -120,9 +122,9 @@ const ContactMe = () => {
             />
             <button
               onClick={handleSubmit}
-              className="form w-[80%] sm:w-[50%] self-center"
+              className="form w-[80%] sm:w-[50%] self-center transition-all hover:scale-[1.15] hover:text-n-1"
             >
-              {form.button}
+              {submitted ? form.button2 : form.button}
             </button>
           </form>
         </section>

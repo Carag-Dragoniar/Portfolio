@@ -13,9 +13,16 @@ export default {
           "51%": { transform: "translateX(100vw) scaleX(-1)" },
           "100%": { transform: "translateX(-20vw) scaleX(-1)" },
         },
+        fly2: {
+          "0%": { transform: "translateX(-70vw) scaleX(1)" },
+          "49%": { transform: "translateX(100vw) scaleX(1)" },
+          "51%": { transform: "translateX(100vw) scaleX(-1)" },
+          "100%": { transform: "translateX(-70vw) scaleX(-1)" },
+        }
       },
       animation: {
         fly: "fly 30s linear infinite ",
+        fly2: "fly2 15s linear infinite ",
       },
       colors: {
         n: {
