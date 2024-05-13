@@ -19,6 +19,7 @@ const Header = () => {
 
   const changeLanguage = (lang) => {
     setLanguage(lang);
+    console.log(language);
   };
 
   const toggleNavigation = () => {
@@ -82,7 +83,7 @@ const Header = () => {
             src={flag_CZ}
             alt="Flag CZ"
             width={60}
-            className={`transition-all cursor-pointer p-2 lg:px-1 opacity-50 hover:opacity-100`}
+            className={`transition-all cursor-pointer p-2 lg:px-1 hover:scale-110 ${language === "CZ" ? "opacity-100" : "opacity-50"}`}
             onClick={() => {
               changeLanguage("CZ");
             }}
@@ -91,7 +92,7 @@ const Header = () => {
             src={flag_UK}
             alt="Flag UK"
             width={60}
-            className={`transition-all cursor-pointer p-2 lg:px-1 opacity-50 hover:opacity-100`}
+            className={`transition-all cursor-pointer p-2 lg:px-1 hover:scale-110 ${language === "EN" ? "opacity-100" : "opacity-50"}`}
             onClick={() => {
               changeLanguage("EN");
             }}
