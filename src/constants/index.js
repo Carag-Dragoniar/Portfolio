@@ -184,7 +184,7 @@ export const text = {
         text2:
           "Ve škole se snažím být aktivní. Chodím na různé akce např. Dny otevřených dveří a též na soutěže např. Náboj 2024 či Kontext.",
         text3:
-          "Až vystuduji, tak bych rád pokračoval studiem na vysoké škole. Konkrétně na UNOB, Univerzitě Obrany, která se nachátí v Brně.",
+          "Až vystuduji, tak bych rád pokračoval studiem na vysoké škole. Konkrétně na UNOB, Univerzitě Obrany, která se nachází v Brně.",
       },
     ],
     Hobbies: [
