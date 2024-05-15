@@ -46,6 +46,7 @@ const ContactMe = () => {
           },
           (error) => {
             console.log("FAILED...", error.text);
+            window.alert(" SENDING FAILED!");
           }
         );
       setSubmitted(true);
